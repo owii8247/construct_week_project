@@ -1,0 +1,22 @@
+Git is a version control system for tracking changes in the computer
+->Coordinates work between multiple developers
+->Who made what changes and when 
+->Work on local repository and then push it to the remote repository (GITHUB)
+Basic Commands-
+->git init #initialize local git repository
+git config --list return the username and email id associated with GITHUB profile 
+->git add #add file(s) to Index 
+->git status #check status of working tree
+->git commit #commit changes in Index
+->git push #push to remote repository
+->git pull #pull latest from remote repository 
+->git clone #clone repository into local directory
+->git merge #merge files from the local branch to the master branch 
+->git push -u origin #will redirect you to the GITHUb profile 
+->git add *.extension #will add all type of extension files
+->git add . #will add all files 
+->git commit -m "Changes"  #This will commit wrt the changes made to the extension more or less a comment to the changed file in the remote repository 
+->git remote #will check for existing files in the repo
+->git remote add origin "https://....." #will connect to the repository 
+To create a branch of your own:-
+-> git checkout -b [name] #for example you create a login functionality program 
