@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account</title>
+    <style>
+        #head
+        {
+            width: 100%;
+            height: auto;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .heading
+        {
+            color: #6f6f6f;
+        }
+        .headContent
+        {
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .headContent>.gotoHome
+        {
+            width: 100px;
+            height: 80px;
+
+        }
+        .headContent>.searchBack
+        {
+            width: 120px;
+            height: 50px;
+            font-size: 23px;
+            font-family: HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 16px;
+            margin-left: 20px;
+            background-color: white;
+            border-radius: 10px;
+            border: none;
+        }
+        .headContent>.searchBack:hover
+        {
+            background-color:#e0e0e0 ;
+            cursor: pointer;
+        }
+        #body
+        {
+            width: 70%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            margin-top: 20px;
+        }
+        #body>.details{
+            width: 70%;
+            margin-left: 40px;
+        }
+        #body>.options{
+            width: 30%;
+        }
+        
+        .details>.form>.block
+        {
+            display: block;
+        }
+        p{
+            font-size: 18px;
+            font-family: HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .form>input ,.form>select{
+            margin-bottom: 35px;
+            margin-right: 10px;
+            padding: 20px 100px 20px 15px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: 1px solid #c6c6c6;
+        }
+      .details>.form>.submit
+        {
+            font-weight: bold;
+            padding: 20px;
+            color: #6f6f6f;
+            font-family: HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .options>hr
+        {
+            color: #e0e0e0;
+        }
+        .options>hr~p
+        {
+            color: #6f6f6f;
+            
+        }
+        path:hover{
+            font-size: 50px;
+        }
+        .logOut
+        {
+            text-decoration: none;
+            color: blue;
+        }
+        .icon:hover
+        {
+            color: red;
+            cursor: pointer;
+           
+        }
+
+        #lowerPart
+        {
+            background-color: #f4f4f4;
+        }
+        #lowerPart>.box
+        {
+            width: 50%;
+            height: auto;
+            font-family: HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif;
+            margin-left: 15%;
+        }
+        #lowerPart>.box>.list
+        {
+            color: #6f6f6f;
+            display: flex;
+            line-height: 50px;
+            font-size: 20px;
+        }
+       a{
+           color: #6f6f6f;
+           text-decoration: none;
+       }
+       li>img
+       {
+           width: 80px;
+           height: 80px;
+       }
+      ul> li > .socialMediaIcon
+       {
+           width: 50px;
+           height: 50px;
+           margin-left: 20px;
+       }
+       ul> li > .socialMediaIcon:hover
+       {
+           cursor: pointer;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div class="headContent">
+            <button class="searchBack"><svg width="22" height="22" viewBox="0 0 16 16" icon="arrow-left-c" class="fxsh0"><g fill-rule="evenodd">         <path d="M10 1.291c0 .17-.06.282-.18.394L3.115 7.972l6.705 6.343c.12.057.18.225.18.337 0 .169-.06.281-.18.393l-.838.786a.671.671 0 0 1-.42.169c-.12 0-.3-.057-.42-.169L.18 8.365A.496.496 0 0 1 0 7.972c0-.113.06-.225.18-.337L8.143.169c.12-.112.3-.169.42-.169.119 0 .3.057.419.169l.838.786c.12.112.18.224.18.336z" fill-rule="nonzero"></path>         <path d="M2 6.957h13.444c.159 0 .291.053.397.159a.539.539 0 0 1 .159.397v1.111a.539.539 0 0 1-.159.397c-.132.133-.251.172-.357.12L2 9.18V6.956z"></path>     </g></svg> Search</button>
+            <img src="https://www.hometogo.com/assets/logo/logo-color.svg" alt="go to home" class="gotoHome">
+        </div>
+    </div>
+    <div id="body">
+        <div class="options">
+            <p>faisal.z.khan5538@gmail.com</p>
+            <p><a href="index.html" class="logOut">Log out</a> </p>
+            <hr>
+            <p> <svg height="20" width="20" viewBox="0 0 16 16" icon="bag" class=" icon f-gray-dark fxb16  fxg0 fxsh0"><path fill-rule="evenodd" d="M6.323 2.355c-.143 0-.258.1-.258.226v1.58h3.87v-1.58c0-.125-.115-.226-.258-.226zm5.16 1.806v-1.58c0-.873-.808-1.581-1.806-1.581H6.323c-.998 0-1.807.708-1.807 1.58v1.581h-2.71C.81 4.161 0 4.87 0 5.741v7.678C0 14.292.809 15 1.806 15h12.388C15.19 15 16 14.292 16 13.42V5.741c0-.873-.809-1.58-1.807-1.58zM1.808 5.516c-.143 0-.259.101-.259.226v7.677c0 .125.116.226.258.226h12.388c.142 0 .258-.1.258-.226V5.742c0-.125-.116-.226-.259-.226z"></path></svg> <span>  </span><a href="https://www.hometogo.com/user/bookings">Your bookings</a> </p> 
+            <p> <svg width="20" height="20" viewBox="0 0 18 18" icon="account" class=" icon f-gray-dark fxb16 fxg0 fxsh0"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 5a4 4 0 1 1-8 0 4 4 0 0 1 8 0zm-1.7 0a2.3 2.3 0 1 1-4.6 0 2.3 2.3 0 0 1 4.6 0zM9 10c5.093 0 6.728 3.228 7.252 5.3.248.98.248 1.7.248 1.7h-15s0-.72.248-1.7C2.272 13.228 3.907 10 9 10zm5.064 4.303c.18.335.316.674.42.997H3.516c.104-.323.24-.662.42-.997a4.583 4.583 0 0 1 1.626-1.766C6.313 12.07 7.4 11.7 9 11.7s2.687.37 3.438.837a4.578 4.578 0 0 1 1.626 1.766z"></path></svg><span>  </span>Personal details </p>
+            <p> <svg width="20" height="20" viewBox="0 0 18 18" icon="globe" class=" icon f-gray-dark fxb16 fxg0 fxsh0"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.972 12.15a6.77 6.77 0 0 1-3.947 3.291l.145-.244a12.17 12.17 0 0 0 1.248-3.047h2.554zm-5.048 2.325a9.972 9.972 0 0 1-.873 1.275H8.95a9.972 9.972 0 0 1-.874-1.275 10.716 10.716 0 0 1-1-2.325h3.848c-.273.92-.637 1.697-1 2.325zM5.582 12.15a12.17 12.17 0 0 0 1.393 3.291A6.769 6.769 0 0 1 3.03 12.15h2.553zm1.173-1.44h4.49a11.308 11.308 0 0 0 0-3.42h-4.49A11.286 11.286 0 0 0 6.626 9c0 .605.047 1.175.129 1.71zM5.3 7.29a12.766 12.766 0 0 0 0 3.42H2.47A6.76 6.76 0 0 1 2.25 9c0-.59.076-1.164.218-1.71H5.3zm1.776-1.44h3.848a10.71 10.71 0 0 0-1-2.325A9.981 9.981 0 0 0 9.05 2.25h-.1c-.252.31-.562.737-.874 1.275a10.715 10.715 0 0 0-1 2.325zm-.1-3.291A12.17 12.17 0 0 0 5.582 5.85H3.027a6.77 6.77 0 0 1 3.948-3.29zm8.555 8.151H12.7a12.767 12.767 0 0 0 0-3.42h2.832c.142.546.218 1.12.218 1.71a6.76 6.76 0 0 1-.219 1.71zm-.56-4.86h-2.553a12.168 12.168 0 0 0-1.393-3.291 6.77 6.77 0 0 1 3.947 3.291zM17.438 9A8.438 8.438 0 1 1 .563 9a8.438 8.438 0 0 1 16.875 0z"></path></svg><span>  </span><a href="https://www.hometogo.com/user/localization">Language and currency details</a></p> 
+            <p> <svg width="20" height="20" viewBox="0 0 18 18" icon="envelope" class=" icon f-gray-dark fxb16 fxg0 fxsh0"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 3.25a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v11.5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3.25zm1.7 2.409v8.391h12.6V5.724l-6.036 4.31L2.7 5.66zm12.6-1.705V3.95H2.733l6.503 4.335L15.3 3.954z"></path></svg> <span> </span> <a href="https://www.hometogo.com/user/email-preferences">Newsletter preferences</a></p>
+        </div>
+        <div class="details">
+            <p class="heading">Your data will only be used for special deals and offers. It will not be shared with anyone outside HomeToGo.</p>
+            <form action="" class="form">
+                <input type="email" name="" id="email" placeholder="enter email" >
+                <input type="number" name="" id="mobile" placeholder="enter mobile number"> 
+                <br>
+                <input type="text" name="" id="fName" placeholder="enter first name">
+                <input type="text" name="" id="lName" placeholder="ther last name" >
+                <select name="gender" id="gender" class="block">
+                    <option value="">Rather not say</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="not applicable">Not applicable</option>
+                </select>
+                <input type="number" name="" id="DOB" placeholder="Birthdate (YYYY-MM-DD)" class="block">
+                <select class="apn curp oln ovh bg-inherit w100p plm pr32 bdn h100p bdrsm text-large c-gray-extra-dark block" ><option value="osrksfrfc" data-test="" selected="">Please select</option><option value="tfrorchhre" data-test="AF">Afghanistan</option><option value="tfrorchhrk" data-test="AL">Albania</option><option value="tfrorchosh" data-test="DZ">Algeria</option><option value="tfrorchhsh" data-test="AS">American Samoa</option><option value="tfrorchhrf" data-test="AD">Andorra</option><option value="tfrorchhst" data-test="AO">Angola</option><option value="tfrorchhrh" data-test="AI">Anguilla</option><option value="tfrorchhsr" data-test="AQ">Antarctica</option><option value="tfrorchhrr" data-test="AG">Antigua and Barbuda</option><option value="tfrorchhss" data-test="AR">Argentina</option><option value="tfrorchhsa" data-test="AM">Armenia</option><option value="tfrorchhha" data-test="AW">Aruba</option><option value="tfrorchhsc" data-test="AU">Australia</option><option value="tfrorchhso" data-test="AT">Austria</option><option value="tfrorchhhe" data-test="AZ">Azerbaijan</option><option value="tfrorchhco" data-test="BS">Bahamas (the)</option><option value="tfrorchhoh" data-test="BH">Bahrain</option><option value="tfrorchhot" data-test="BD">Bangladesh</option><option value="tfrorchhoa" data-test="BB">Barbados</option><option value="tfrorchhke" data-test="BY">Belarus</option><option value="tfrorchhoe" data-test="BE">Belgium</option><option value="tfrorchhkr" data-test="BZ">Belize</option><option value="tfrorchhoc" data-test="BJ">Benin</option><option value="tfrorchhcf" data-test="BM">Bermuda</option><option value="tfrorchhcc" data-test="BT">Bhutan</option><option value="tfrorchhce" data-test="BO">Bolivia (Plurinational State of)</option><option value="tfrorchhhk" data-test="BA">Bosnia and Herzegovina</option><option value="tfrorchhkf" data-test="BW">Botswana</option><option value="tfrorchhka" data-test="BV">Bouvet Island</option><option value="tfrorchhch" data-test="BR">Brazil</option><option value="tfrorchkaa" data-test="IO">British Indian Ocean Territory (the)</option><option value="tfrorchhct" data-test="BN">Brunei Darussalam</option><option value="tfrorchhos" data-test="BG">Bulgaria</option><option value="tfrorchhor" data-test="BF">Burkina Faso</option><option value="tfrorchhoo" data-test="BI">Burundi</option><option value="tfrorchkss" data-test="KH">Cambodia</option><option value="tfrorchoft" data-test="CM">Cameroon</option><option value="tfrorchoaa" data-test="CA">Canada</option><option value="tfrorchotf" data-test="CV">Cape Verde</option><option value="tfrorchkot" data-test="KY">Cayman Islands (the)</option><option value="tfrorchoas" data-test="CF">Central African Republic (the)</option><option value="tfrorcotea" data-test="TD">Chad</option><option value="tfrorchoff" data-test="CL">Chile</option><option value="tfrorchofe" data-test="CN">China</option><option value="tfrorchote" data-test="CX">Christmas Island</option><option value="tfrorchoat" data-test="CC">Cocos (Keeling) Islands (the)</option><option value="tfrorchofr" data-test="CO">Colombia</option><option value="tfrorchkha" data-test="KM">Comoros (the)</option><option value="tfrorchoae" data-test="CD">Congo (the Democratic Republic of the)</option><option value="tfrorchoah" data-test="CG">Congo (the Republic of)</option><option value="tfrorchofa" data-test="CK">Cook Islands (the)</option><option value="tfrorchofo" data-test="CR">Costa Rica</option><option value="tfrorchcot" data-test="HR">Croatia</option><option value="tfrorchota" data-test="CU">Cuba</option><option value="tfrorchotr" data-test="CY">Cyprus</option><option value="tfrorchots" data-test="CZ">Czech Republic (the)</option><option value="tfrorchoac" data-test="CI">Côte d'Ivoire</option><option value="tfrorchorf" data-test="DK">Denmark</option><option value="tfrorchora" data-test="DJ">Djibouti</option><option value="tfrorchore" data-test="DM">Dominica</option><option value="tfrorchors" data-test="DO">Dominican Republic (the)</option><option value="tfrorchohr" data-test="EC">Ecuador</option><option value="tfrorchohc" data-test="EG">Egypt</option><option value="tfrorcotfo" data-test="SV">El Salvador</option><option value="tfrorchcra" data-test="GQ">Equatorial Guinea</option><option value="tfrorchook" data-test="ER">Eritrea</option><option value="tfrorchohh" data-test="EE">Estonia</option><option value="tfrorchocf" data-test="ET">Ethiopia</option><option value="tfrorchcae" data-test="FK">Falkland Islands (the) [Malvinas]</option><option value="tfrorchcao" data-test="FO">Faroe Islands (the)</option><option value="tfrorchcat" data-test="FJ">Fiji</option><option value="tfrorchcaf" data-test="FI">Finland</option><option value="tfrorchcfa" data-test="FR">France</option><option value="tfrorchctk" data-test="GF">French Guiana</option><option value="tfrorcofac" data-test="PF">French Polynesia</option><option value="tfrorcotet" data-test="TF">French Southern Territories (the)</option><option value="tfrorchctr" data-test="GA">Gabon</option><option value="tfrorchceh" data-test="GM">Gambia (the)</option><option value="tfrorchctc" data-test="GE">Georgia</option><option value="tfrorchoes" data-test="DE">Germany</option><option value="tfrorchcef" data-test="GH">Ghana</option><option value="tfrorchcet" data-test="GI">Gibraltar</option><option value="tfrorchcrf" data-test="GR">Greece</option><option value="tfrorchces" data-test="GL">Greenland</option><option value="tfrorchcto" data-test="GD">Grenada</option><option value="tfrorchcek" data-test="GP">Guadeloupe</option><option value="tfrorchcrr" data-test="GU">Guam</option><option value="tfrorchcre" data-test="GT">Guatemala</option><option value="tfrorchcea" data-test="GG">Guernsey</option><option value="tfrorchceo" data-test="GN">Guinea</option><option value="tfrorchcrh" data-test="GW">Guinea-Bissau</option><option value="tfrorchcrc" data-test="GY">Guyana</option><option value="tfrorchcor" data-test="HT">Haiti</option><option value="tfrorchcho" data-test="HM">Heard Island and McDonald Islands</option><option value="tfrorcotck" data-test="VA">Holy See (the)</option><option value="tfrorchchc" data-test="HN">Honduras</option><option value="tfrorchchs" data-test="HK">Hong Kong</option><option value="tfrorchcos" data-test="HU">Hungary</option><option value="tfrorchkar" data-test="IS">Iceland</option><option value="tfrorchckk" data-test="IN">India</option><option value="tfrorchcck" data-test="ID">Indonesia</option><option value="tfrorchkae" data-test="IR">Iran (Islamic Republic of)</option><option value="tfrorchkat" data-test="IQ">Iraq</option><option value="tfrorchcka" data-test="IE">Ireland</option><option value="tfrorchckc" data-test="IM">Isle of Man</option><option value="tfrorchcko" data-test="IL">Israel</option><option value="tfrorchkas" data-test="IT">Italy</option><option value="tfrorchktk" data-test="JM">Jamaica</option><option value="tfrorchket" data-test="JP">Japan</option><option value="tfrorchktf" data-test="JE">Jersey</option><option value="tfrorchkef" data-test="JO">Jordan</option><option value="tfrorchkoe" data-test="KZ">Kazakhstan</option><option value="tfrorchkst" data-test="KE">Kenya</option><option value="tfrorchksh" data-test="KI">Kiribati</option><option value="tfrorchkhe" data-test="KP">Korea (the Democratic People's Republic of)</option><option value="tfrorchkhs" data-test="KR">Korea (the Republic of)</option><option value="tfrorchkoa" data-test="KW">Kuwait</option><option value="tfrorchksr" data-test="KG">Kyrgyzstan</option><option value="tfrorchkok" data-test="LA">Lao People's Democratic Republic (the)</option><option value="tfrorcoaaa" data-test="LV">Latvia</option><option value="tfrorchkca" data-test="LB">Lebanon</option><option value="tfrorchkko" data-test="LS">Lesotho</option><option value="tfrorchkkh" data-test="LR">Liberia</option><option value="tfrorcoaae" data-test="LY">Libya</option><option value="tfrorchkco" data-test="LI">Liechtenstein</option><option value="tfrorchkkc" data-test="LT">Lithuania</option><option value="tfrorchkkk" data-test="LU">Luxembourg</option><option value="tfrorcoatr" data-test="MO">Macao</option><option value="tfrorcoata" data-test="MK">Macedonia (the former Yugoslav Republic of)</option><option value="tfrorcoafh" data-test="MG">Madagascar</option><option value="tfrorcoaet" data-test="MW">Malawi</option><option value="tfrorcoaer" data-test="MY">Malaysia</option><option value="tfrorcoaef" data-test="MV">Maldives</option><option value="tfrorcoatf" data-test="ML">Mali</option><option value="tfrorcoatk" data-test="MT">Malta</option><option value="tfrorcoafo" data-test="MH">Marshall Islands (the)</option><option value="tfrorcoath" data-test="MQ">Martinique</option><option value="tfrorcoato" data-test="MR">Mauritania</option><option value="tfrorcoaea" data-test="MU">Mauritius</option><option value="tfrorcoraf" data-test="YT">Mayotte</option><option value="tfrorcoaee" data-test="MX">Mexico</option><option value="tfrorchcas" data-test="FM">Micronesia (Federated States of)</option><option value="tfrorcoafe" data-test="MD">Moldova (the Republic of)</option><option value="tfrorcoaft" data-test="MC">Monaco</option><option value="tfrorcoate" data-test="MN">Mongolia</option><option value="tfrorcoafr" data-test="ME">Montenegro</option><option value="tfrorcoatc" data-test="MS">Montserrat</option><option value="tfrorcoafa" data-test="MA">Morocco</option><option value="tfrorcoaes" data-test="MZ">Mozambique</option><option value="tfrorcoatt" data-test="MM">Myanmar</option><option value="tfrorcoarf" data-test="NA">Namibia</option><option value="tfrorcoasc" data-test="NR">Nauru</option><option value="tfrorcoash" data-test="NP">Nepal</option><option value="tfrorcoast" data-test="NL">Netherlands (the)</option><option value="tfrorcoare" data-test="NC">New Caledonia</option><option value="tfrorcoahh" data-test="NZ">New Zealand</option><option value="tfrorcoark" data-test="NI">Nicaragua</option><option value="tfrorcoars" data-test="NE">Niger (the)</option><option value="tfrorcoaro" data-test="NG">Nigeria</option><option value="tfrorcoahf" data-test="NU">Niue</option><option value="tfrorcoarh" data-test="NF">Norfolk Island</option><option value="tfrorcoats" data-test="MP">Northern Mariana Islands (the)</option><option value="tfrorcoass" data-test="NO">Norway</option><option value="tfrorcoacr" data-test="OM">Oman</option><option value="tfrorcoffe" data-test="PK">Pakistan</option><option value="tfrorcofts" data-test="PW">Palau</option><option value="tfrorcoftf" data-test="PS">Palestine, State of</option><option value="tfrorcofae" data-test="PA">Panama</option><option value="tfrorcofak" data-test="PG">Papua New Guinea</option><option value="tfrorcofto" data-test="PY">Paraguay</option><option value="tfrorcofao" data-test="PE">Peru</option><option value="tfrorcoffa" data-test="PH">Philippines (the)</option><option value="tfrorcoffh" data-test="PN">Pitcairn</option><option value="tfrorcoffr" data-test="PL">Poland</option><option value="tfrorcoftt" data-test="PT">Portugal</option><option value="tfrorcofta" data-test="PR">Puerto Rico</option><option value="tfrorcofer" data-test="QA">Qatar</option><option value="tfrorcofok" data-test="RO">Romania</option><option value="tfrorcofcs" data-test="RU">Russian Federation (the)</option><option value="tfrorcofco" data-test="RW">Rwanda</option><option value="tfrorcofhk" data-test="RE">Réunion</option><option value="tfrorchhca" data-test="BL">Saint Barthélemy</option><option value="tfrorcotae" data-test="SH">Saint Helena, Ascension and Tristan da Cunha</option><option value="tfrorchkhf" data-test="KN">Saint Kitts and Nevis</option><option value="tfrorchkcf" data-test="LC">Saint Lucia</option><option value="tfrorcoafs" data-test="MF">Saint Martin (French part)</option><option value="tfrorcoffs" data-test="PM">Saint Pierre and Miquelon</option><option value="tfrorcotkf" data-test="VC">Saint Vincent and the Grenadines</option><option value="tfrorcoeec" data-test="WS">Samoa</option><option value="tfrorcotac" data-test="SM">San Marino</option><option value="tfrorcotfs" data-test="ST">Sao Tome and Principe</option><option value="tfrorcofkh" data-test="SA">Saudi Arabia</option><option value="tfrorcotak" data-test="SN">Senegal</option><option value="tfrorcofce" data-test="RS">Serbia</option><option value="tfrorcofkc" data-test="SC">Seychelles</option><option value="tfrorcotao" data-test="SL">Sierra Leone</option><option value="tfrorcotat" data-test="SG">Singapore</option><option value="tfrorcotah" data-test="SK">Slovakia</option><option value="tfrorcotar" data-test="SI">Slovenia</option><option value="tfrorcofko" data-test="SB">Solomon Islands</option><option value="tfrorcotfa" data-test="SO">Somalia</option><option value="tfrorcorfe" data-test="ZA">South Africa</option><option value="tfrorchcrt" data-test="GS">South Georgia and the South Sandwich Islands</option><option value="tfrorcotfr" data-test="SS">South Sudan</option><option value="tfrorchoca" data-test="ES">Spain</option><option value="tfrorchkck" data-test="LK">Sri Lanka</option><option value="tfrorcofkk" data-test="SD">Sudan (the)</option><option value="tfrorcotfe" data-test="SR">Suriname</option><option value="tfrorcotas" data-test="SJ">Svalbard and Jan Mayen</option><option value="tfrorcottf" data-test="SZ">Swaziland</option><option value="tfrorcotaa" data-test="SE">Sweden</option><option value="tfrorchoao" data-test="CH">Switzerland</option><option value="tfrorcotta" data-test="SY">Syrian Arab Republic</option><option value="tfrorcotrk" data-test="TW">Taiwan</option><option value="tfrorcoteh" data-test="TJ">Tajikistan</option><option value="tfrorcotst" data-test="TZ">Tanzania, United Republic of</option><option value="tfrorcoter" data-test="TH">Thailand</option><option value="tfrorcotec" data-test="TL">Timor-Leste</option><option value="tfrorcotee" data-test="TG">Togo</option><option value="tfrorcoteo" data-test="TK">Tokelau</option><option value="tfrorcotrf" data-test="TO">Tonga</option><option value="tfrorcotrh" data-test="TT">Trinidad and Tobago</option><option value="tfrorcotra" data-test="TN">Tunisia</option><option value="tfrorcotrr" data-test="TR">Turkey</option><option value="tfrorcotek" data-test="TM">Turkmenistan</option><option value="tfrorcottk" data-test="TC">Turks and Caicos Islands (the)</option><option value="tfrorcotrc" data-test="TV">Tuvalu</option><option value="tfrorcothr" data-test="UG">Uganda</option><option value="tfrorcotsc" data-test="UA">Ukraine</option><option value="tfrorchhrt" data-test="AE">United Arab Emirates (the)</option><option value="tfrorchcts" data-test="GB">United Kingdom of Great Britain and Northern Ireland (the)</option><option value="tfrorcotoa" data-test="UM">United States Minor Outlying Islands (the)</option><option value="tfrorcotoh" data-test="US">United States of America (the)</option><option value="tfrorcotct" data-test="UY">Uruguay</option><option value="tfrorcotce" data-test="UZ">Uzbekistan</option><option value="tfrorcoeak" data-test="VU">Vanuatu</option><option value="tfrorcotke" data-test="VE">Venezuela (Bolivarian Republic of)</option><option value="tfrorcoeat" data-test="VN">Vietnam</option><option value="tfrorcotks" data-test="VG">Virgin Islands (British)</option><option value="tfrorcotko" data-test="VI">Virgin Islands (U.S.)</option><option value="tfrorcoets" data-test="WF">Wallis and Futuna</option><option value="tfrorchohk" data-test="EH">Western Sahara*</option><option value="tfrorcoech" data-test="YE">Yemen</option><option value="tfrorcorts" data-test="ZM">Zambia</option><option value="tfrorcores" data-test="ZW">Zimbabwe</option><option value="tfrorchhhf" data-test="AX">Åland Islands</option></select>
+                <input type="submit" name="" id="save" value="save" class="block submit">
+            </form>
+        </div>
+    </div>
+    <div id="lowerPart">
+        <div class="box">
+            <div class="list">
+                <div>
+                    
+                    <ul type="none">
+                        <li><h3>HOMETOGO</h3></li>
+                        <li><a href="https://www.hometogo.com/about/">About Us</a></li>
+                        <li><a href="https://www.hometogo.com/careers/">Careers</a></li>
+                        <li><a href="https://ir.hometogo.de/websites/hometogo/English/1/welcome-to-hometogo-se-investor-relations.html">Investors</a></li>
+                        <li><a href="https://ir.hometogo.de/websites/hometogo/English/1000/share-information.html">HomeToGo Stock</a></li>
+                        <li><a href="https://www.hometogo.com/app/">App </a></li>
+                        <li><a href="https://www.hometogo.com/media/">Insights</a></li>
+                        <li><a href="https://www.hometogo.com/inspiration/">Insoirations</a></li>
+                        <li><a href="https://www.hometogo.com/media/covid-19/">COVID-19:Latest Updates</a></li>
+                        <li><img src="https://www.hometogo.com/assets/logo/logo-color.svg" alt="Go to Home" class="gotoHome1" ></li>
+                    </ul>
+                    
+                </div>
+                <div class="list">
+                    
+                    <ul type="none">
+                        <li><h3>CONTACT</h3></li>
+                        <li><a href="https://www.hometogo.com/about/press/">Press</a></li>
+                        <li><a href="https://help-center.hometogo.com/s/?language=en_US">Help Center and Contant</a></li>
+                        <li><a href="https://www.hometogo.com/partner/">Become a Partner</a></li>
+                        <li><a href="https://my.hometogo.com/">Sign-up as a Host</a></li>
+    
+                    </ul>
+            </div>
+                <div class="list">
+                    
+                    <ul type="none" >
+                        <li><h3>PRIVACY & TERMS</h3></li>
+                        <li><a href="https://www.hometogo.com/legal/#gtc">Terms of Service</a></li>
+                        <li><a href="https://www.hometogo.com/legal/#dataprotection">Privacy Policy</a></li>
+                        <li><a href="https://www.hometogo.com/legal/">Legal</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <ul type="none">
+                        <li><h3>SOCIAL MEDIA</h3></li>
+                        <li><img class="socialMediaIcon" src="https://cdn2.hometogo.net/assets/media/svg/b594b1a38478e464f2c95858713ad432.svg " alt="">
+                            <img class="socialMediaIcon"  src="https://cdn2.hometogo.net/assets/media/svg/12023f6a7b698379fa4e6aff3e88edfd.svg" alt=""></li>
+                            <li><h3>HOMETOGO APPS</h3></li>
+                            <li><img data-src="" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",saveData)
+
+    function saveData()
+    {
+        event.preventDefault();
+        alert("Your preference have successully saved");
+        window.location.reload();
+     }
+     document.querySelector(".gotoHome").addEventListener("click",toHomePage)
+     function toHomePage()
+     {
+        window.location.href="index.html";
+     }
+     document.querySelector(".gotoHome1").addEventListener("click",toHomePage1)
+     function toHomePage1()
+     {
+        window.location.href="index.html";
+     }
+    
+     
+</script>
