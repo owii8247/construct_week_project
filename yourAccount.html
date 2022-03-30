@@ -148,20 +148,28 @@
        {
            cursor: pointer;
        }
-
+       .socialMediaIcon2
+       {
+           width: 200px;
+           height: 100px;
+       }
+       .socialMediaIcon2:hover
+       {
+        cursor: pointer;
+       }
 
     </style>
 </head>
 <body>
     <div id="head">
         <div class="headContent">
-            <button class="searchBack"><svg width="22" height="22" viewBox="0 0 16 16" icon="arrow-left-c" class="fxsh0"><g fill-rule="evenodd">         <path d="M10 1.291c0 .17-.06.282-.18.394L3.115 7.972l6.705 6.343c.12.057.18.225.18.337 0 .169-.06.281-.18.393l-.838.786a.671.671 0 0 1-.42.169c-.12 0-.3-.057-.42-.169L.18 8.365A.496.496 0 0 1 0 7.972c0-.113.06-.225.18-.337L8.143.169c.12-.112.3-.169.42-.169.119 0 .3.057.419.169l.838.786c.12.112.18.224.18.336z" fill-rule="nonzero"></path>         <path d="M2 6.957h13.444c.159 0 .291.053.397.159a.539.539 0 0 1 .159.397v1.111a.539.539 0 0 1-.159.397c-.132.133-.251.172-.357.12L2 9.18V6.956z"></path>     </g></svg> Search</button>
+            <button class="searchBack"><svg width="22" height="22" viewBox="0 0 16 16" icon="arrow-left-c" class="fxsh0"><g fill-rule="evenodd">         <path d="M10 1.291c0 .17-.06.282-.18.394L3.115 7.972l6.705 6.343c.12.057.18.225.18.337 0 .169-.06.281-.18.393l-.838.786a.671.671 0 0 1-.42.169c-.12 0-.3-.057-.42-.169L.18 8.365A.496.496 0 0 1 0 7.972c0-.113.06-.225.18-.337L8.143.169c.12-.112.3-.169.42-.169.119 0 .3.057.419.169l.838.786c.12.112.18.224.18.336z" fill-rule="nonzero"></path>         <path d="M2 6.957h13.444c.159 0 .291.053.397.159a.539.539 0 0 1 .159.397v1.111a.539.539 0 0 1-.159.397c-.132.133-.251.172-.357.12L2 9.18V6.956z"></path></g></svg> Search</button>
             <img src="https://www.hometogo.com/assets/logo/logo-color.svg" alt="go to home" class="gotoHome">
         </div>
     </div>
     <div id="body">
         <div class="options">
-            <p>faisal.z.khan5538@gmail.com</p>
+            <p class="logedInEmail"></p>
             <p><a href="index.html" class="logOut">Log out</a> </p>
             <hr>
             <p> <svg height="20" width="20" viewBox="0 0 16 16" icon="bag" class=" icon f-gray-dark fxb16  fxg0 fxsh0"><path fill-rule="evenodd" d="M6.323 2.355c-.143 0-.258.1-.258.226v1.58h3.87v-1.58c0-.125-.115-.226-.258-.226zm5.16 1.806v-1.58c0-.873-.808-1.581-1.806-1.581H6.323c-.998 0-1.807.708-1.807 1.58v1.581h-2.71C.81 4.161 0 4.87 0 5.741v7.678C0 14.292.809 15 1.806 15h12.388C15.19 15 16 14.292 16 13.42V5.741c0-.873-.809-1.58-1.807-1.58zM1.808 5.516c-.143 0-.259.101-.259.226v7.677c0 .125.116.226.258.226h12.388c.142 0 .258-.1.258-.226V5.742c0-.125-.116-.226-.259-.226z"></path></svg> <span>  </span><a href="https://www.hometogo.com/user/bookings">Your bookings</a> </p> 
@@ -234,7 +242,7 @@
                         <li><img class="socialMediaIcon" src="https://cdn2.hometogo.net/assets/media/svg/b594b1a38478e464f2c95858713ad432.svg " alt="">
                             <img class="socialMediaIcon"  src="https://cdn2.hometogo.net/assets/media/svg/12023f6a7b698379fa4e6aff3e88edfd.svg" alt=""></li>
                             <li><h3>HOMETOGO APPS</h3></li>
-                            <li><img data-src="" alt=""></li>
+                            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkz6nZoyn95odX6ol9INbIfU1tG4ky1MDkBQ&usqp=CAU" alt="" class="socialMediaIcon2"></li>
                     </ul>
                 </div>
             </div>
@@ -243,12 +251,13 @@
 </body>
 </html>
 <script>
+    var email=JSON.parse(localStorage.getItem("logedInEmail")) || [];
     document.querySelector("form").addEventListener("submit",saveData)
 
     function saveData()
     {
         event.preventDefault();
-        alert("Your preference have successully saved");
+        alert("Your preference have successfully saved");
         window.location.reload();
      }
      document.querySelector(".gotoHome").addEventListener("click",toHomePage)
@@ -262,5 +271,13 @@
         window.location.href="index.html";
      }
     
-     
+     email.map(function(elem)
+     {
+        document.querySelector(".logedInEmail").textContent=elem.email;
+     })
+     document.querySelector(".logOut").addEventListener("click",goToHome)
+     function goToHome()
+     {
+         document.querySelector(".logedInEmail").textContent="";
+     }
 </script>

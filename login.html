@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            background-color: #f0f2f5;
+            height: 600px;
+            text-align: center;
+            font-family: HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .box
+        {
+            width: 30%;
+            height: auto;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            padding: 30px;
+        }
+        #container>img{
+            width: 100px;
+            height: 100px;
+            margin-top: 40px;
+            
+        }
+        form>input{
+            display: block;
+            margin: auto;
+            padding: 20px 150px 20px 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        form>#login
+        {
+            padding: 10px 20px 10px 20px;
+        }
+        a
+        {
+            text-decoration: none;
+            font-size: 25px;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="container">
+            <img src="https://www.hometogo.com/assets/logo/logo-color.svg" alt="hometogo">
+            <div class="box">
+                <h1>Log-in Account</h1>
+                <form>
+                    <input type="email" name="" id="email" placeholder="enter email">
+                     <input type="password" name="" id="password" placeholder="enter password">
+                    <input type="submit" name="" id="login" value="log-in">
+                </form>
+                <p>Don't have account <a href="signin.html">sign-up</a></p>
+                
+            </div>
+        </div>
+    
+</body>
+</html>
+<script>
+    var registeredData=JSON.parse(localStorage.getItem("userDetail"));
+    document.querySelector("form").addEventListener("submit",myLogin);
+    var email=[];
+    function myLogin()
+    {
+        event.preventDefault();
+        var enteredEmail=document.querySelector("#email").value;
+        var enteredPass=document.querySelector("#password").value;
+        registeredData.map(function (elem){
+            var count=0;
+            if(elem.email == enteredEmail && elem.password==enteredPass)
+            {
+                alert("Successfully log-in");
+                window.location.href="yourAccount.html"
+            }
+            var obj={
+                email: enteredEmail,
+                pass: enteredPass
+            };
+            email.push(obj);
+            localStorage.setItem("logedInEmail",JSON.stringify(email));
+            
+        });
+    }
+</script>
