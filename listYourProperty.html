@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #head {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 15px;
+            margin-bottom: 64px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        #head>div>img {
+            height: 32px;
+            width: 59px;
+        }
+
+        #search {
+            padding-top: 7px;
+        }
+
+        #head>div {
+            width: 6%;
+        }
+
+        #head > div > button {
+            border: none;
+            background-color: white;
+            color: grey;
+            font-size: 14px;
+        }
+
+        #container {
+            width: 65%;
+            margin: auto;
+            margin-bottom: 64px;
+            display: flex;
+            justify-content: space-between;
+            font-family: Helvetica, sans-serif;
+        }
+
+        #container > div {
+            width: 45%;
+            /* border: 1px solid; dpddg */
+        }
+
+        #container > div > div {
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+        }
+
+        #box > button {
+            height: 48px;
+            width: 118px;
+            border-radius: 10px;
+            background-color: #6832ce;
+            color: white;
+            font-size: 17px;
+        }
+
+        #box > button:hover {
+            background-color: #4c05cf;
+        }
+        #prop {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #prop > img {
+            height: 35px;
+            width: 80px;
+        }
+
+        #container > div p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        #box > p {
+            font-size: 17px;
+            line-height: 22px;
+        }
+
+        #mid > img {
+            width: 100%;
+        }
+
+        #box2 {
+            width: 70%;
+            /* border: 1px solid red; */
+            margin: auto;
+            font-family: Helvetica, sans-serif;
+        }
+
+        #box2 > div {
+            font-size: 17px;
+            line-height: 22px;
+        }
+
+        #main {
+            width: 65%;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 64px;
+            margin-bottom: 64px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-family: Helvetica, sans-serif;
+        }
+
+        #one , #two, #three, #four{
+            height: 65px;
+            /* border: 1px solid red; */
+            display: flex;
+        }
+
+        #one>div:nth-child(1){
+            width: 13%;
+            padding: 20px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            color:#6f6f6f;
+        }
+        #two>div:nth-child(1),
+        #three>div:nth-child(1),
+        #four>div:nth-child(1) {
+            width: 13%;
+            padding: 10px;
+        }
+
+        #one>div:nth-child(2) {
+            width: 23.5%;
+            /* border: 1px solid red; */
+            padding: 20px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            color:#6f6f6f;
+        }
+        #one>div:nth-child(3) {
+            padding: 20px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            color:#6f6f6f;
+        }
+
+        #two>div:nth-child(2),
+        #two>div:nth-child(3){
+            width: 23.5%;
+            /* border: 1px solid red; */
+            padding: 20px 10px;
+            font-size: 14px;
+        }
+
+        #three>div:nth-child(2),
+        #three>div:nth-child(3) {
+            width: 23.5%;
+            /* border: 1px solid red; */
+            padding: 20px 10px;
+            font-size: 14px;
+        }
+
+        #four>div:nth-child(2),
+        #four>div:nth-child(3){
+            width: 23.5%;
+            /* border: 1px solid red; */
+            padding: 20px 10px;
+            font-size: 14px;
+        }
+        #main> div > div {
+            display: flex;
+            width: 34%;
+            /* border: 1px solid blue; */
+        }
+        #main> div > div > button{
+            border-radius: 10px;
+            background-color: #6832ce;
+            color: white;
+            margin: auto;
+            width: 300px;
+            height: 50px;
+            font-size: 17px;
+        }
+
+        #main> div > div > button:hover {
+            background-color: #4c05cf;
+        }
+        #main> div > div > img {
+            width: 125px;
+            height: 45px;
+        } 
+        #main > p{
+            padding-left: 10px;
+            margin-bottom: 0px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        #footer {
+            width: 100%;
+            background-color: #f4f4f4;
+            font-family: Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        #footer>div {
+            width: 65%;
+            margin: auto;
+            display: flex;
+            /* border: 1px solid red; */
+        }
+
+        #bimg>button>img {
+            width: 112px;
+            height: 37px;
+        }
+
+        #footer>div>div {
+            display: flex;
+            width: 25%;
+            flex-direction: column;
+        }
+
+        #footer>div>div>a {
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        #footer > div > div > p {
+            font-size: 14px;
+            font-weight: bold;
+            color:#6f6f6f;
+        }
+
+        #footer > div > img {
+            height: 32px;
+            width: 59px;
+        }
+        /* .c2 {
+            width: 14%;
+            padding-left: 15px;
+            border: 1px solid blue;
+        }
+
+        .c2>img {
+            width: 144px;
+            height: 65px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="search"><i class="fa-solid fa-arrow-left"></i><button>Search</button></div>
+        <div><img src="https://www.hometogo.com/assets/logo/logo-color.svg" alt=""></div>
+        <div></div>
+    </div>
+    <div id="container">
+        <div>
+            <h1>Do you want to join one of the fastest-growing distribution networks in the industry?</h1>
+            <p>
+                With just a few clicks, you can list your property on HomeToGo which has the world's largest selection
+                of vacation rentals with millions of offers. Thousands of partners already trust the HomeToGo Group to
+                increase their bookings and diversify their revenues. With our powerful reach and international
+                audience, our HomeToGo brands ensure an unmatched online visibility so our partners can attract and
+                retain travelers.
+            </p>
+        </div>
+        <div>
+            <div>
+                <div id="prop">
+                    <img src="https://www.hometogo.com/assets/logo/logo-color.svg" alt="">
+                    <img src="https://www.hometogo.com/assets/casamundo/default/logo/logo.svg" alt="">
+                    <img src="https://www.hometogo.com/assets/tripping/default/logo/logo.svg" alt="">
+                    <img src="https://www.hometogo.com/assets/wimdu/default/logo/logo.svg" alt="">
+                </div>
+                <div id="box">
+                    <p>Do you own or distribute vacation rentals and are interested in listing your properties with us?
+                    </p>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mid">
+        <img src="listProperty.png" alt="">
+    </div>
+    <div id="box2">
+        <h2>Do you have questions about your partnership with HomeToGo?</h2>
+        <div>
+            <p>Please send us an e-mail with your question to <a href="">partnersupport@hometogo.com</a> and we will get
+                back to you as soon as possible.</p>
+        </div>
+    </div>
+    <div id="main">
+        <p>Do you advertise your vacation rentals online and want to cooperate with HomeToGo via another platform?</p>
+        <p>We collaborate with some of the largest travel listing platforms in the market. Here's some more information
+            on our partners' subscription rates and fees:</p>
+        <div id="one">
+            <div>PARTNERS</div>
+            <div>
+                ANNUAL SUBSCRIPTION
+            </div>
+            <div>COMMISSION</div>
+        </div>
+        <div id="two">
+            <div><img src="https://www.hometogo.com/images/provider-children/smoobu.png" alt=""></div>
+            <div>
+                None</div>
+            <div>8% Partner fee + Traveler Service Fee</div>
+            <div><button>Manage your rental</button></div>
+        </div>
+        <div id="three">
+            <div><img src="https://cdn.hometogo.net/assets/media/pics/216_90/6053435ecdee8.png" alt=""></div>
+            <div>
+                None</div>
+            <div>19.5% Booking Fee</div>
+            <div><button>List your rental</button></div>
+        </div>
+        <div id="four">
+            <div><img src="https://www.hometogo.com/images/provider-children/eDomizil.png?v" alt=""></div>
+            <div>Starts at €19/month</div>
+            <div>None</div>
+            <div><button>List your rental</button></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <div>
+                <p>HOMETOGO</p>
+                <a href="">Careers</a>
+                <a href="">Investor</a>
+                <a href="">HomeToGo Stock</a>
+                <a href="">App</a>
+                <a href="">Insights</a>
+                <a href="">Inspiration</a>
+                <a href="">COVID-19:Latest updates</a>
+                <a href="">About Us</a>
+            </div>
+            <div>
+                <p>CONTACT</p>
+                <a href="">Press</a>
+                <a href="">Help Center and Contact</a>
+                <a href="">Become a Partner</a>
+                <a href="">Sign-up as a Host</a>
+            </div>
+            <div>
+                <p>PRIVACY & TERMS</p>
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Legal</a>
+            </div>
+            <div>
+                <p>HOMETOGO APPS</p>
+                <div id="bimg">
+                    <button class="bimg"><img
+                            src="https://icon-library.com/images/apple-download-icon/apple-download-icon-15.jpg"
+                            alt=""></button>
+                    <button class="bimg"><img
+                            src="https://www.freepnglogos.com/uploads/play-store-logo-png/google-play-store-logo-keyword-the-amazon-insider-podcast-6.png"
+                            alt=""></button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div><img src="https://www.hometogo.com/assets/logo/logo-color.svg" alt=""></div>
+    </div>
+</body>
+
+</html>
