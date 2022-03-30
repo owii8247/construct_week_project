@@ -13,29 +13,88 @@
             border: 1px solid black;
             margin: auto;
             border-radius: 10px;
+            background-image:url("https://cdn2.hometogo.net/assets/media/pics/1500_500/5c9b74b2185f1.webp")
+        
             
+        }
+        h1{
+        text-align: center;
+        color: whitesmoke;
+        margin-top: 200px;
+    
         }
         #topmain{
             display: flex;
             justify-content: space-between;
-            padding: 5px;
+        
+            color: white;
         }
         #leftmain{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+            color: white;
+            padding-right: 10px;
+        
+            gap: 30px;
+            
         }
         #tab{
             display: flex;
             justify-content: center;
             
         }
+        #serch{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: auto;
+            border-radius: 5px;
+        
+            height: 40px;
+            width: 80%;
+            /* padding: 10px 40% 20% 20%; */
+         justify-content: center;
+         margin-left: 100px;
+         background-color: white;
+         margin-top: 100px;
+
+        }
+        #editselect1{
+            width: 100%;
+            height: 100%;
+            font-size: larger;
+        
+        }
+        #editselect2{
+            width: 100%;
+            height: 100%;
+            font-size: larger;
+
+        }
+        #toplogo{
+            padding-left: 20px;
+            height: 2px;
+            padding-top: 10px;
+        }
+
+
+        #button{
+            height: 100%;
+            width: 100%;
+            font-size: larger;
+            color: beige;
+            background-color: blue;
+        }
+        #dateofbirth{
+            color: black;
+        }
+
         #uk{
             width: 70%;
             height: 50px;
             border: 1px solid black;
             border-radius: 5px;
             margin:auto;
-            margin-top: 30px;
+            margin-top: 110px;
             
         }
         #learn{
@@ -242,21 +301,56 @@
 <body>
     <div id="main">
         <div id="topmain">
-            <div> Home to go</div>
+            <div id="toplogo">
+                <!-- <img src="https://www.hometogo.com/assets/logo/logo-redesign-white.svg" alt=""/> -->
+
+            </div>
             <div id="leftmain">
                 <div>List your property</div>
                 <div> Wishlists</div>
                 <div><a href="login.html">My account</a></div>
             </div>
+        </div>  
+            <h1>The World's largest Selection Of Vacation Rentals</h1>
+
+             <div id="serch">
+                <div><select id="editselect1">
+                    <option value="">select your city</option>
+                    <option>Pune</option>
+                    <option>Delhi</option>
+                    <optin>Mumbai</optin>
+                    <option>Hyderabad</option>
+                 </select></div>
+                <div>
+                    
+                     <label for="dateofbirth" >check in date</label>
+                    <input type="date" name="dateofbirth" id="dateofbirth">
+                </div>
+                <div>
+     
+                     <label for="dateofbirth" >check out  date</label>
+                   <input type="date" name="dateofbirth" id="dateofbirth">
+                </div>
+                <div>
+                    <select id="editselect2">
+                        <option value="">preference</option>
+                        <option>Adults</option>
+                        <option>Children</option>
+                        <option>Bedrooms</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="button">Search</button>
+                </div>
             
         </div>
-        <h1>The World's largest Selection Of Vacation Rentals</h1>
-        <div id="tab">
+        <!-- <div id="h1"><h1>The World's largest Selection Of Vacation Rentals</h1></div> -->
+        <!-- <div id="tab">
             <div>Where are you going?</div>
             <div>Anytime</div>
             <div>Guests</div>
             <div>Search</div>
-        </div>
+        </div> -->
     </div>
     <div id="uk">Ukraine Crisis Relief - Find and Offer Accommodation. Learn more</div>
     <div id="learn">Learn more about local COVID-19 travel guidelines</div>
@@ -431,3 +525,21 @@
     </div>
 </body>
 </html>
+<script>
+      document.querySelector("#button").addEventListener("click",myfunction);
+    var jobarr=JSON.parse(localStorage.getItem("jobserch")) ||[];
+    function myfunction(){
+        var obj={
+         city : document.querySelector("#editselect1").value,
+         preference : document.querySelector("#editselect2").value,
+    
+        }
+        jobarr.push(obj);
+        console.log(jobarr)
+        localStorage.setItem("jobserch",JSON.stringify(jobarr));
+
+
+
+       
+    }
+</script>
